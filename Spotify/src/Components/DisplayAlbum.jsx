@@ -1,10 +1,10 @@
-import { useContext } from 'react'
+import  { useContext } from 'react'
 import Navbar from './Navbar'
 import { useParams } from 'react-router-dom'
 import { albumsData, assets, songsData } from '../assets/assets';
 import { PlayerContext } from '../Context/Playercontext';
 
-const DisplayAlbum = () => {
+const Displayalbum = () => {
 
     const { id } = useParams();
     const albumData = albumsData[id];// this all are used to show the album part of the song with the id of the song 
@@ -59,4 +59,4 @@ const DisplayAlbum = () => {
     )
 }
 
-export default DisplayAlbum;
+export default Displayalbum;
