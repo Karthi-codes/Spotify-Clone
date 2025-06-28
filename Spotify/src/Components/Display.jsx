@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Displayhome from './Displayhome'
 import { Routes, Route, useLocation } from "react-router-dom"
-import Displayalbum from './Displayalbum'
+import DisplayAlbum from './Displayalbum'
 import { albumsData } from '../assets/assets'
 
 
@@ -28,7 +28,7 @@ const Display = () => {
 
             <Routes>
                 <Route path="/" element={<Displayhome />} />
-                <Route path="/album/:id" element={<Displayalbum />} />
+                <Route path="/album/:id" element={<DisplayAlbum />} />
             </Routes>
         </div>
     )
